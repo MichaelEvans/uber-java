@@ -18,9 +18,29 @@
 package org.michaelevans.uber.entities;
 
 public class Product {
-    public String product_id;
-    public String description;
-    public String display_name;
-    public int capacity;
+    private String product_id;
+    private String description;
+    private String display_name;
+    private int capacity;
     private String image;
+
+    public String getProductId() {
+        return product_id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getDisplayName() {
+        return display_name;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public String getImage() {
+        return image;
+    }
 }

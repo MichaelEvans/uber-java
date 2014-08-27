@@ -18,11 +18,39 @@
 package org.michaelevans.uber.entities;
 
 public class Price {
-    public String product_id;
-    public String currency_code;
-    public String display_name;
-    public String estimate;
-    public int low_estimate;
-    public int high_estimate;
-    public float surge_multiplier;
+    private String product_id;
+    private String currency_code;
+    private String display_name;
+    private String estimate;
+    private int low_estimate;
+    private int high_estimate;
+    private float surge_multiplier;
+
+    public String getProductId() {
+        return product_id;
+    }
+
+    public String getCurrencyCode() {
+        return currency_code;
+    }
+
+    public String getDisplayName() {
+        return display_name;
+    }
+
+    public String getEstimate() {
+        return estimate;
+    }
+
+    public int getLowEstimate() {
+        return low_estimate;
+    }
+
+    public int getHighEstimate() {
+        return high_estimate;
+    }
+
+    public float getSurgeMultiplier() {
+        return surge_multiplier;
+    }
 }

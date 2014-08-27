@@ -19,5 +19,9 @@ package org.michaelevans.uber.entities;
 import java.util.List;
 
 public class UberTimes {
-    public List<Time> times;
+    private List<Time> times;
+
+    public List<Time> getTimes() {
+        return times;
+    }
 }

@@ -19,5 +19,9 @@ package org.michaelevans.uber.entities;
 import java.util.List;
 
 public class UberPrices {
-    public List<Price> prices;
+    private List<Price> prices;
+
+    public List<Price> getPrices() {
+        return prices;
+    }
 }

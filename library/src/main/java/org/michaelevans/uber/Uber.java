@@ -16,6 +16,8 @@
 
 package org.michaelevans.uber;
 
+import org.michaelevans.uber.services.UberService;
+
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
 import retrofit.converter.GsonConverter;
@@ -68,5 +70,9 @@ public class Uber {
         }
 
         return restAdapter;
+    }
+
+    public UberService uberService(){
+        return getRestAdapter().create(UberService.class);
     }
 }

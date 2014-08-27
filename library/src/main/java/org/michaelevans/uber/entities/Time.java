@@ -17,7 +17,19 @@
 package org.michaelevans.uber.entities;
 
 public class Time {
-    public String product_id;
-    public String display_name;
-    public int estimate;
+    private String product_id;
+    private String display_name;
+    private int estimate;
+
+    public String getProductId() {
+        return product_id;
+    }
+
+    public String getDisplayName() {
+        return display_name;
+    }
+
+    public int getEstimate() {
+        return estimate;
+    }
 }
