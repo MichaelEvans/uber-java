@@ -39,4 +39,7 @@ public interface UberService {
 
     @GET("/v1/estimates/time")
     UberTimes getTimeEstimate(@Query("start_latitude") double start_latitude, @Query("start_longitude") double start_longitude, @Query("customer_uuid") String customerUUID, @Query("product_id") String product_id);
+
+    @GET("/v1/promotions")
+    UberPromotions getPromotions(@Query("start_latitude") double start_latitude, @Query("start_longitude") double start_longitude, @Query("end_latitude") double end_latitude, @Query("end_longitude") double end_longitude );
 }
